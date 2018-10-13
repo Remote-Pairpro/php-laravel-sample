@@ -15,3 +15,5 @@ RUN apt update \
   && echo 'export PATH=${PATH}:~/.composer/vendor/bin' >> ~/.bashrc
 ADD ./resources/php.ini ./php/7.2/cli/php.ini
 ADD ./resources/php.ini ./php/7.2/apache2/php.ini
+VOLUME /workspace
+WORKDIR /workspace

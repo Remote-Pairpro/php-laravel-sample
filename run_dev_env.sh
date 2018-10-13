@@ -9,4 +9,4 @@ cd ${SCRIPT_DIR}
 cd ./env/develop/docker
 
 docker build -t php-laravel . \
-&& docker run -i --rm -p 8000:8000 -t php-laravel /bin/bash
+&& docker run -i --rm -p 8000:8000 -v ${SCRIPT_DIR}:/workspace -t php-laravel /bin/bash
