@@ -1,4 +1,4 @@
-laravel docker iamge
+laravel docker image
 ====================
 
 # What's this ?
